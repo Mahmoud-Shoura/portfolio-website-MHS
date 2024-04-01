@@ -53,3 +53,26 @@ $(document).ready(function () {
 
   navbarFixed();
 });
+
+function downloadCV() {
+  // Replace 'cv_file_path' with the path to your CV file
+  var cvFilePath = "../images/my CV .pdf";
+
+  // Create a new anchor element
+  var downloadLink = document.createElement("a");
+
+  // Set the href attribute to the path of the CV file
+  downloadLink.href = cvFilePath;
+
+  // Set the download attribute to force download
+  downloadLink.download = "MHS-cv"; // You can specify the name of the downloaded file
+
+  // Append the anchor element to the body
+  document.body.appendChild(downloadLink);
+
+  // Programmatically trigger a click event on the anchor element
+  downloadLink.click();
+
+  // Clean up: remove the anchor element from the DOM
+  document.body.removeChild(downloadLink);
+}
