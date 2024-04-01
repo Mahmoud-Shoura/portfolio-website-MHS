@@ -2,7 +2,7 @@
 
 
 
-@media only screen and (max-wigth: 340px) {
+@media only screen and (max-width: 340px) {
     .header-area .main-menu .navbar,
     .header-area .main-menu .navbar .navbar-brand,
     site-main .subscribe-us-area .subscribe .subscribe-title, 
@@ -12,6 +12,10 @@
     {
         padding: 2%;
         margin: 0%;
+    }
+
+    .site-main .site-banner .site-title h1 {
+        font-size: 2rem;
     }
 
     .site-main .site-banner .site-title h1 {
@@ -25,9 +29,15 @@
     .site-main > .services-area .services {
         width: 13rem;
     }
+
+    .site-main .about-area .about-title h2 > span {
+        display: block;
+        font: normal bold 36px/38px var(--roboto);
+        letter-spacing: 11px;
+    }
 }
 
-@media only screen and (max-wigth: 792px) {
+@media only screen and (max-width: 792px) {
     .site-main .about-area .about-title h2 > span {
         font-size: 31px;
         letter-spacing: 10px;
@@ -63,7 +73,7 @@
 }
 
 
-@media only screen and (max-wigth: 1910px) {
+@media only screen and (max-width: 1910px) {
     .header-area .main-menu .navbar {
         padding: 1rem;
     }
